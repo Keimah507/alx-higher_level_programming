@@ -8,7 +8,7 @@ def mirror(num):
         rem = num % 10
         n_rev = (n_rev * 10) + rem
         mirror(num // 10)
-        return n_rev
+    return n_rev
 
 
 for i in range(0, 100):
@@ -19,5 +19,5 @@ for i in range(0, 100):
     else:
         n_rev = 0
         i_rev = mirror(i)
-    if i < i_rev:
+        if i < i_rev:
         print("{}".format(i), end=", ")
