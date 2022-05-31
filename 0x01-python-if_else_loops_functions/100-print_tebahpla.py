@@ -5,5 +5,5 @@ while mv_back > 96:
         upperC = chr(mv_back - 32)
         print("{}".format(upperC), end="")
     else:
-        print("{}".format(upperC, end="")
+        print("{}".format(chr(mv_back)), end="")
     mv_back -= 1
