@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-back = 122
-while back > 96:
-    if back % 2 != 0:
-        upperC = chr(back - 32)
+mv_back = 122
+while mv_back > 96:
+    if mv_back % 2 != 0:
+        upperC = chr(mv_back - 32)
         print("{}".format(upperC), end="")
     else:
-        print("{}".format(upperC, end="")
-    back -= 1
+        print("{}".format(chr(mv_back)), end="")
+    mv_back -= 1
