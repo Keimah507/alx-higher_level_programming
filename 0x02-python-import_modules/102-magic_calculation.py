@@ -7,4 +7,4 @@ def magic_calculation(a, b):
             c = add(c, i)
         return (c)
     else:
-        return(sun(a, b))
+        return (sub(a, b))
