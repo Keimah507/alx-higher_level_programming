@@ -1,4 +1,4 @@
-#1/usr/bin/python3
+#!/usr/bin/python3
 def multiple_returns(sentence):
     len_sen = len(sentence)
 
@@ -7,4 +7,4 @@ def multiple_returns(sentence):
     else:
         new_tuple = (len_sen, sentence[0])
 
-    retrun(new_tuple)
+    return(new_tuple)
