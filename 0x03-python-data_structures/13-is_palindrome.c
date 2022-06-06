@@ -43,7 +43,7 @@ int compare(listint_t *h1, listint_t *h2)
 
 	while (tmp1 != NULL && tmp2 != NULL)
 	{
-		if (tmp->n == tmp->n)
+		if (tmp1->n == tmp2->n)
 		{
 			tmp1 = tmp1->next;
 			tmp2 = tmp2-> next;
@@ -54,7 +54,7 @@ int compare(listint_t *h1, listint_t *h2)
 		}
 	}
 
-	if (tmp1 == NULL  && tmp2 == NULL)
+	if (tmp1 == NULL && tmp2 == NULL)
 	{
 		return (1);
 	}
