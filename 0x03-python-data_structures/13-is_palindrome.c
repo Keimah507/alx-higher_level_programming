@@ -99,10 +99,10 @@ int is_palindrome(listint_t **head)
 		reverse(&scn_half);
 		isp = compare(*head, scn_half);
 
-		if(middle != NULL)
+		if (middle != NULL)
 		{
 			prev_slow->next = middle;
-			middle->next =scn_half;
+			middle->next = scn_half;
 		}
 		else
 		{
