@@ -97,17 +97,17 @@ int is_palindrome(listint_t **head)
 		scn_half = slow;
 		prev_slow->next = NULL;
 		reverse(&scn_half);
-		isp = compare(*head, scn_half):
+		isp = compare(*head, scn_half);
 
-			if(middle != NULL)
-			{
-				prev_slow->next = middle;
-				middle->next =scn_half;
-			}
-			else
-			{
-				prev_slow->next = scn_half;
-			}
+		if(middle != NULL)
+		{
+			prev_slow->next = middle;
+			middle->next =scn_half;
+		}
+		else
+		{
+			prev_slow->next = scn_half;
+		}
 	}
 
 	return (isp);
