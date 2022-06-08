@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-def only_diff_element(set_1, set_2):
+def only_diff_elements(set_1, set_2):
     set_a, set_b, set_c = set(), set(), set()
 
     set_a = {item for item in set_1 if item not in set_2}
