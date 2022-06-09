@@ -4,4 +4,4 @@ def multiply_by_2(a_dictionary):
     if a_dictionary:
         for key, val in a_dictionary.items():
             b_dictonary.update({key: val * 2)}
-    return (b_dictionary)
+        return (b_dictionary)
