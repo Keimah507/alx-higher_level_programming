@@ -8,19 +8,19 @@ class Square:
     
     Attributes:
         __size (int): size of the square's side
-     """
+    """
     def __init__(self, size=0):
         """Initializes the square.
         Args:
             size (int): size of the square's side
         """
-    if type(size) is not int:
-        raise TypeError("size must be an integer")
-    else:
-        if size < 0:
-            raise ValueError("size must be >= 0")
+        if type(size) is not int:
+            raise TypeError("size must be an integer")
         else:
-            self.__size = size
+            if size < 0:
+                raise ValueError("size must be >= 0")
+            else:
+                self.__size = size
 
     def area(self):
         """ Calculates the area of the square.
