@@ -34,28 +34,28 @@ class Square:
         Returns:
             None
          """
-         if self.__size == 0:
-             print()
-             return
-         for i in range(self.__size):
-             for j in range(self.__size):
-                 print("{}".format("#"), end="")
+        if self.__size == 0:
+            print()
+            return
+        for i in range(self.__size):
+            for j in range(self.__size):
+                print("{}".format("#"), end="")
             print("{}".format(""))
 
-            @property
-            def size(self):
-                """Getter method to return value of size
+    @property
+    def size(self):
+        """Getter method to return value of size
 
-                Setter reassigns the value of size
-                """
-                return self.__size
+        Setter reassigns the value of size
+        """
+        return self.__size
 
-            @size.setter
-            def size(self, value):
-                if type(value) is not int:
-                    raise TypeError("size must be an integer")
-                else:
-                    if value < 0:
-                        raise ValueError("size must be >= 0")
-                else:
-                    self.__size = value
+    @size.setter
+    def size(self, value):
+        if type(value) is not int:
+            raise TypeError("size must be an integer")
+        else:
+            if value < 0:
+                raise ValueError("size must be >= 0")
+            else:
+                self.__size = value
