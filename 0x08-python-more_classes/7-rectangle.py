@@ -11,7 +11,7 @@ class Rectangle:
     print_symbol = "#"
 
     def __init__(self, width=0, height=0):
-         """Initializes the rectangle"""
+        """Initializes the rectangle"""
         self.width = width
         self.height = height
         Rectangle.number_of_instances += 1
@@ -33,7 +33,7 @@ class Rectangle:
             raise TypeError("width must be an integer")
         if value < 0:
             raise ValueError("width must be >= 0")
-    self.__width = value
+        self.__width = value
 
     @property
     def height(self):
@@ -64,7 +64,7 @@ class Rectangle:
         string = ""
         if self.__width != 0 and self.__height != 0:
             string += "\n".join(str(self.print_symbol) * self.__width
-                    for j in range(self.__height))
+                                for j in range(self.__height))
         return string
 
     def __repr__(self):
