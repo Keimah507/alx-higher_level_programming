@@ -14,7 +14,7 @@ class Rectangle:
     @property
     def width(self):
         """getter for the private instance attribute width"""
-    return self.__width
+        return self.__width
 
     @width.setter
     def width(self, value):
@@ -23,7 +23,7 @@ class Rectangle:
             raise TypeError("width must be an integer")
         if value < 0:
             raise ValueError("width must be >= 0")
-    self.__height = value
+        self.__height = value
 
     @property
     def height(self):
@@ -55,7 +55,7 @@ class Rectangle:
         if self.__width != 0 and self.__height != 0:
             string += "\n".join("#" * self.__width
                                 for j in range(self.__height))
-            return string
+        return string
 
     def __repr__(self):
         """returns a string representation of the rectangle for reproduction"""
