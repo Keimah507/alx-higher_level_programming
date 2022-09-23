@@ -3,9 +3,9 @@
 as parameter, and passes body of the response"""
 
 
-if __name__ == "__main__"
-import requests
-import sys
+if __name__ == "__main__":
+    import requests
+    import sys
 
-r = requests.post(sys.argv[1], data={'email': sys.argv[2]})
-print(r.text)
+    r = requests.post(sys.argv[1], data={'email': sys.argv[2]})
+    print(r.text)
