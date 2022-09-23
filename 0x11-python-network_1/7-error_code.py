@@ -4,7 +4,7 @@ and displays body of the response"""
 
 
 import requests
-form sys import argv
+from sys import argv
 
 if __name__ == "__main__":
     req = requests.get(argv[1])
