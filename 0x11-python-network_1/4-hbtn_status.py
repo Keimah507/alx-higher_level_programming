@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """fetches the URL"""
 
-if __name__ == "__main__" :
+if __name__ == "__main__":
     import requests
 
     r = requests.get('https://alx-intranet.hbtn.io/status')
